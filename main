@@ -1,0 +1,17 @@
+from random import randint
+
+while True:
+    print("\nOlá! Eu sou um Mestre de Números!\n")
+    numero = int(input("Em que número eu estou pensando agora? (Entre 0 e 5): "))
+
+    c_numero = randint(0, 5)
+
+    if numero == c_numero:
+        print(f"Parabéns! Você também é um mestre de números! Eu estava pensando em {c_numero}")
+    else:
+        print(f"Desculpe... na verdade eu estava pensando em {c_numero}")
+    
+    continuar = input("Você gostaria de continuar? (1- Sim; 2- Não): ")
+    if continuar.lower() != '1':
+        print("Ok! Fim de Jogo")
+        break
